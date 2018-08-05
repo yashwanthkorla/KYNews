@@ -1,0 +1,37 @@
+<ion-header id="header">
+
+  <ion-navbar color="nav">
+      <button ion-button menuToggle>
+          <ion-icon name="menu"></ion-icon>
+        </button>
+    <ion-title>{{title}}</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding-top>
+  <ion-refresher (ionRefresh)="doRefresh($event)">
+    <ion-refresher-content
+      pullingIcon="arrow-dropdown"
+      pullingText="Pull to refresh"
+      refreshingSpinner="circles"
+      refreshingText="Updating the news...">
+    </ion-refresher-content>
+  </ion-refresher>
+    <ion-list>
+      <ion-item *ngFor="let item of items" text-wrap id="items" (click)="full(item)" tappable>
+         <h2 class="title">{{item.title}}</h2>
+    
+         <p class="pubdate">{{item.pubDate}}</p>
+        
+         <p style="font-size:12px;color:#999595;font-family:'muli-bold',sans-serif;">{{item.description}}</p>
+      </ion-item>
+    </ion-list>
+    <ion-infinite-scroll (ionInfinite)="doInfinite($event)">
+        <ion-infinite-scroll-content
+          loadingSpinner="bubbles"
+          loadingText="Loading more data...">
+        </ion-infinite-scroll-content>
+      </ion-infinite-scroll>
+    </ion-content>

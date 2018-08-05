@@ -14,3 +14,45 @@
 // To declare rules for a specific mode, create a child rule
 // for the .md, .ios, or .wp mode classes. The mode class is
 // automatically applied to the <body> element in the app.
+#menu_list{
+    font-family: "muli-bold",sans-serif;
+}
+.title{
+    font-family: "muli-extrabold",sans-serif;
+   
+}
+.pubdate{
+    font-family: "muli-light",sans-serif; 
+}
+.description{
+    font-family: "muli-regular",sans-serif;
+    font-size:13px;
+}
+@font-face{
+    font-family: "muli-black";
+    src: url("../assets/Muli-Black.ttf");
+}
+@font-face{
+    font-family: "muli-bold";
+    src: url("../assets/Muli-bold.ttf");
+}
+@font-face{
+    font-family: "muli-extrabold";
+    src: url("../assets/Muli-ExtraBold.ttf");
+}
+@font-face{
+    font-family: "muli-extralight";
+    src: url("../assets/Muli-ExtraLight.ttf");
+}
+@font-face{
+    font-family: "muli-light";
+    src: url("../assets/Muli-Light.ttf");
+}
+@font-face{
+    font-family: "muli-regular";
+    src: url("../assets/Muli-Regular.ttf");
+}
+@font-face{
+    font-family: "muli-semibold";
+    src: url("../assets/Muli-SemiBold.ttf");
+}

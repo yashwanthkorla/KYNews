@@ -1,0 +1,26 @@
+page-about {
+ion-content{
+}
+#about_app,#about_dev,#contact{
+    font-size: 20px;
+    text-align: center;
+    color: rgb(172, 172, 172);
+    font-family:"muli-extrabold",sans-serif;   
+}
+
+#about_app_description,#dev,#details{
+font-size:  13px;
+font-family:"muli-bold",sans-serif;
+}
+#powered{
+    font-size: 16px;
+    text-align: center;
+    margin-top:40px;
+    color: rgb(214, 214, 214);
+    font-family:"muli-extrabold",sans-serif;
+}
+ion-col{
+    text-align: center;
+    // padding-left:10%;
+}
+}

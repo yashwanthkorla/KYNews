@@ -1,0 +1,54 @@
+<!--
+  Generated template for the CommonPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<!-- <ion-header>
+
+  <ion-navbar color="nav">
+    <ion-title >{{item.title}}</ion-title>
+    
+  </ion-navbar>
+
+</ion-header> -->
+
+
+<ion-content>
+  <ion-fab top right padding>
+    <button ion-fab color="white" style="box-shadow:0px 0px 15px 6px #b3b3b3;" (click)="back()">    <ion-icon name="close"></ion-icon>   </button>
+  </ion-fab>
+
+    <div id="image">
+<img src="{{item.imageUrl}}" alt="{{item.title}}">
+</div>
+<div id="content">
+<div padding-left padding-right>
+<p class="title">{{item.title}}</p>
+<hr>
+<p class="pubdate">{{item.pubDate}}</p>
+<hr>
+<p class="description">{{item.description}}</p>
+
+</div>
+<ion-row style="font-family:'muli-extrabold',sans-serif">
+  <ion-col>
+    <button ion-button small outline color="nav" block (click)='share()'>Share <ion-icon name="share"></ion-icon></button>
+  </ion-col>
+  <ion-col>
+<button (click)="browser(item.link)" small ion-button block outline color="nav">Read More<ion-icon name="arrow-dropright-circle"></ion-icon>
+</button>
+</ion-col>
+</ion-row>
+<!-- <ion-fab bottom center>
+  <button ion-fab icon-only color="nav" mini><ion-icon name="add"></ion-icon></button>
+  <ion-fab-list>
+    <button ion-button small outline color="nav" block>Share <ion-icon name="share"></ion-icon></button>
+    
+  </ion-fab-list>
+</ion-fab> -->
+<!-- <ion-fab bottom center>
+  <button ion-fab color="nav">More</button>
+</ion-fab> -->
+</div>
+</ion-content>

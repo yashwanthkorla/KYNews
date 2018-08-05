@@ -1,19 +1,35 @@
-<ion-menu [content]="content">
-  <ion-header>
-    <ion-toolbar>
-      <ion-title>Menu</ion-title>
+<ion-split-pane>
+<ion-menu [content]="content" type="reveal">
+  <!-- <ion-header>
+    <ion-toolbar color="nav">
+      <ion-title>News List</ion-title>
     </ion-toolbar>
-  </ion-header>
+  </ion-header> -->
 
   <ion-content>
+      <div padding style="background-color:#4DB6AC;font-family:'muli-extrabold', sans-serif;text-align:center; margin:10px;border-radius:10px;">
+          <p style="font-size:12px;color:white;">The news which is displayed here is taken from RSS feed of News18.<br>All Images and Articles belongs to News18 Channel.<br>We dont have any right over the content.<br>For more info go to</p>
+      <ion-buttons>
+          <a ion-button outline color="white" href="http://www.news18.com/" target="_blank" style="font-weight:bold;" >News 18</a>
+          <button ion-button outline color="white" (click)="About()" menuClose>About Us</button>
+      </ion-buttons>
+      <p style="font-size:9px;color:white">For Business contact at yashwanthdeveloper@gmail.com</p>
+      </div>
+     
+      <h4 padding-top padding-right padding-left style="font-family: 'muli-extrabold'" text-center>
+       Topics
+      </h4>
     <ion-list>
-      <button menuClose ion-item *ngFor="let p of pages" (click)="openPage(p)">
+      <!-- <ion-list-header></ion-list-header> -->
+      <ion-item menuClose ion-item style="font-size:13px;font-family:'muli-bold',sans-serif;" *ngFor="let p of pages" tappable (click)="openPage(p)">
         {{p.title}}
-      </button>
+      </ion-item>
     </ion-list>
+      
   </ion-content>
 
 </ion-menu>
 
 <!-- Disable swipe-to-go-back because it's poor UX to combine STGB with side menus -->
-<ion-nav [root]="rootPage" #content swipeBackEnabled="false"></ion-nav>
+<ion-nav [root]="rootPage" main #content swipeBackEnabled="false"></ion-nav>
+</ion-split-pane>
