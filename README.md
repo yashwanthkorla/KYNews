@@ -33,3 +33,5 @@ To launch the app in the simulator(Android/ios) - ionic cordova run android/ios 
 ![Side Menu](src/assets/App_Images/SideMenu.PNG)
 ![About us](src/assets/App_Images/Aboutus.PNG)
 ![Insude a post](src/assets/App_Images/Inside_a_post.PNG)
+
+**If you want an app similar to this for your blog/website, you can reach out to me at yashwanthdeveloper@gmail.com** 
